@@ -22,9 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dmSans.className}`}>
-        {/* <Providers>{children}</Providers> */}
-        {children}
+        <Providers>
+          <div className="root-layout">{children}</div>
+        </Providers>
       </body>
     </html>
   );
 }
+
+// java -D"java.library.path=/Users/himan/Downloads/dynamodb_local_java/DynamoDBLocal_lib" -jar /Users/himan/Downloads/dynamodb_local_java/DynamoDBLocal.jar -sharedDb -dbPath E:\Nextjs LMS
+
+//aws dynamodb list-tables --endpoint-url http://localhost:8000
