@@ -37,18 +37,13 @@ const PaymentPageContent = () => {
         ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
         : undefined;
 
-    console.log("Initializing the strip payment");
-
     const result = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: `${process.env.NEXT_PUBLIC_STRIPE_REDIRECT_URL}?id=${courseId}`,
+        return_url: `${baseUrl}/checkout?step=3&id=${courseId}`,
       },
       redirect: "if_required",
     });
-    console.log("Strip payment is completed");
-
-    console.log({ result });
 
     if (result.paymentIntent?.status === "succeeded") {
       const transactionData: Partial<Transaction> = {
