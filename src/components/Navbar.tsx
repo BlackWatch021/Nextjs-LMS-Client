@@ -11,7 +11,7 @@ const NavBar = ({ isCoursePage }: { isCoursePage: boolean }) => {
   const [isdarkMode, setIsDarkMode] = useState(false);
   const { user } = useUser();
   const userRole = user?.publicMetadata?.userType as "student" | "teacher";
-  console.log("User type", user?.publicMetadata?.userType);
+  // console.log("User type", user?.publicMetadata?.userType);
   return (
     <nav className="dashboard-navbar">
       <div className="dashboard-navbar__container">

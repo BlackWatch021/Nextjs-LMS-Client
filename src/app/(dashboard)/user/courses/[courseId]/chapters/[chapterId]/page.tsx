@@ -21,7 +21,7 @@ const Course = () => {
     hasMarkedComplete,
     setHasMarkedComplete,
   } = useCourseProgressData();
-  console.log("currentChapter.video:", currentChapter);
+  // console.log("currentChapter.video:", currentChapter);
 
   const playerRef = useRef<ReactPlayer>(null);
 
@@ -38,7 +38,7 @@ const Course = () => {
       updateChapterProgress(
         currentSection.sectionId,
         currentChapter.chapterId,
-        true
+        true,
       );
     }
   };
