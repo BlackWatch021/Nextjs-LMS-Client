@@ -36,10 +36,10 @@ const NavBar = ({ isCoursePage }: { isCoursePage: boolean }) => {
           </div>
         </div>
         <div className="dashboard-navbar__actions">
-          <button className="nondashboard-navbar__notification-button">
+          {/* <button className="nondashboard-navbar__notification-button">
             <span className="nondashboard-navbar__notification-indicator"></span>
             <Bell className="nondashboard-navbar__notificcation-icon" />
-          </button>
+          </button> */}
 
           <UserButton
             appearance={{
