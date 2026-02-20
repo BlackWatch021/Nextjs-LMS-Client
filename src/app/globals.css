@@ -143,12 +143,12 @@ input[type="color"] {
 }
 
 .search__selected-course {
-  @apply basis-2/5 min-w-[350px] h-fit border-2 border-primary-600 bg-customgreys-secondarybg overflow-hidden rounded-lg;
+  @apply basis-2/5  h-fit border-2 border-primary-600 bg-customgreys-secondarybg overflow-hidden rounded-lg;
 }
 
 /* Selected Course Component */
 .selected-course {
-  @apply overflow-hidden py-9 px-9;
+  @apply overflow-hidden py-9 px-4 md:px-9;
 }
 
 .selected-course__title {
@@ -227,11 +227,11 @@ input[type="color"] {
 }
 
 .landing__hero {
-  @apply flex justify-between items-center mt-12 h-[500px] rounded-lg bg-customgreys-secondarybg;
+  @apply flex flex-col-reverse md:flex-row md:justify-between md:items-center mt-12 h-[500px] rounded-lg bg-customgreys-secondarybg;
 }
 
 .landing__hero-content {
-  @apply basis-1/2 px-16 mx-auto;
+  @apply basis-1/2 mt-8 md:mt-0 px-16 md:mx-auto;
 }
 
 .landing__title {
@@ -1204,15 +1204,15 @@ input[type="color"] {
 }
 
 .nondashboard-navbar__container {
-  @apply flex justify-between items-center w-3/4 py-8;
+  @apply flex justify-between items-center w-10/12 md:w-3/4 py-8;
 }
 
 .nondashboard-navbar__search {
-  @apply flex justify-between items-center gap-14;
+  @apply flex justify-between items-center gap-4 md:gap-14;
 }
 
 .nondashboard-navbar__brand {
-  @apply font-bold text-lg sm:text-xl hover:text-customgreys-dirtyGrey;
+  @apply font-bold text-lg md:text-xl hover:text-customgreys-dirtyGrey;
 }
 
 .nondashboard-navbar__search-input {
